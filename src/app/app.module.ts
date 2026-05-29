@@ -20,7 +20,7 @@ import { BlogPostComponent } from './components/pages/blog-post/blog-post.compon
 import { FormsModule } from '@angular/forms';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 import { KontehComponent } from './components/pages/projects/konteh/konteh.component';
-import { SSAComponent } from './components/pages/projects/ssa/ssa.component';
+import { SoftSkillsAcademyComponent } from './components/pages/projects/soft-skills-academy/soft-skills-academy.component';
 import { Code9Component } from './components/pages/projects/code9/code9.component';
 import { PetDanaUOblacima } from './components/pages/projects/pet-dana-u-oblacima/pet-dana-u-oblacima.component';
 import { EestechChallengeComponent } from './components/pages/projects/eestech-challenge/eestech-challenge.component';
@@ -53,7 +53,7 @@ import { PartnerCardComponent } from './components/pages/partners/partner-card/p
     BlogPostComponent,
     NotFoundComponent,
     KontehComponent,
-    SSAComponent,
+    SoftSkillsAcademyComponent,
     Code9Component,
     PetDanaUOblacima,
     EestechChallengeComponent,

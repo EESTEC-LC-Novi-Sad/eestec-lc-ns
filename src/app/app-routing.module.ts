@@ -10,6 +10,7 @@ import { BlogPostComponent } from './components/pages/blog-post/blog-post.compon
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 import { KontehComponent } from './components/pages/projects/konteh/konteh.component';
 import { SSAComponent } from './components/pages/projects/ssa/ssa.component';
+import { SoftSkillsAcademyComponent } from './components/pages/projects/soft-skills-academy/soft-skills-academy.component';
 import { Code9Component } from './components/pages/projects/code9/code9.component';
 import { PetDanaUOblacima } from './components/pages/projects/pet-dana-u-oblacima/pet-dana-u-oblacima.component';
 import { PartnerPageComponent } from './components/pages/partner-page/partner-page.component';
@@ -65,11 +66,14 @@ const routes: Routes = [
     component: KontehComponent,
     title: 'KONTEH - ' + baseTitle,
   },
+  
+  
   {
-    path: 'ssa',
-    component: SSAComponent,
+    path: 'soft-skills-academy',
+    component: SoftSkillsAcademyComponent,
     title: 'Soft Skills Academy - ' + baseTitle,
   },
+
   {
     path: 'code9',
     component: Code9Component,
