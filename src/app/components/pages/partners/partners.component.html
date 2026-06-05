@@ -1,16 +1,51 @@
 <div class="basic-page">
   <div class="max-width-1200 auto-margin">
     <h1>Partneri</h1>
-    <div>
-      <mat-spinner
-        class="auto-margin"
-        *ngIf="partners.length == 0"
-      ></mat-spinner>
-      <div *ngIf="partners.length != 0" class="partners">
-        <div class="partner" *ngFor="let partner of partners">
-          <partner-card [partner]="partner"></partner-card>
+
+    <mat-spinner class="auto-margin" *ngIf="loading"></mat-spinner>
+
+    <div *ngIf="!loading">
+
+      <!-- Godišnji partneri -->
+      <div *ngIf="partners.length > 0" class="partner-section">
+        <h2>Godišnji partneri</h2>
+        <div class="partners">
+          <div class="partner" *ngFor="let partner of partners">
+            <partner-card [partner]="partner"></partner-card>
+          </div>
         </div>
       </div>
+
+      <!-- Godišnji robni partneri -->
+      <div *ngIf="merchPartners.length > 0" class="partner-section">
+        <h2>Godišnji robni partneri</h2>
+        <div class="partners">
+          <div class="partner" *ngFor="let partner of merchPartners">
+            <partner-card [partner]="partner"></partner-card>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medijski pokrovitelji -->
+      <div *ngIf="mediaPartners.length > 0" class="partner-section">
+        <h2>Medijski pokrovitelji</h2>
+        <div class="partners">
+          <div class="partner" *ngFor="let partner of mediaPartners">
+            <partner-card [partner]="partner"></partner-card>
+          </div>
+        </div>
+      </div>
+
+      <!-- Partnerske organizacije -->
+      <div *ngIf="partnerOrganisations.length > 0" class="partner-section">
+        <h2>Partnerske organizacije</h2>
+        <div class="partners">
+          <div class="partner" *ngFor="let partner of partnerOrganisations">
+            <partner-card [partner]="partner"></partner-card>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
