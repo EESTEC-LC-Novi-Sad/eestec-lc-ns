@@ -29,18 +29,17 @@
           >
             <img
               src="{{ partner.logo.fields.file.url }}"
-              [class.invert]="theme == 'dark'"
             />
           </div>
         </div>
-        <div>
+        <div *ngIf="partner.description">
           <h2>Opis</h2>
           <div [innerHtml]="returnHtmlFromRichText(partner.description)"></div>
         </div>
 
         <hr />
 
-        <div>
+        <div *ngIf="partner.gallery">
           <h2 class="mb-5">Galerija</h2>
           <div>
             <lightgallery [settings]="settings">
