@@ -1,13 +1,11 @@
 <a routerLink="/partner/{{ partner.id }}">
-  <div
-    class="card-container clickable p-4 is-flex is-flex-direction-column is-justify-content-center"
-  >
-    <div>
-      <img
-        src="{{ partner.logo.fields.file.url }}"
-        [class.invert]="theme == 'dark'"
-      />
+  <div class="card-container clickable p-4">
+    
+    <div class="image-container">
+      <img src="{{ partner.logo.fields.file.url }}" />
     </div>
+
     <h2>{{ partner.name }}</h2>
+
   </div>
 </a>

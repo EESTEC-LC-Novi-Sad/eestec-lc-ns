@@ -56,4 +56,11 @@ export class PartnerService {
 
     return partner;
   }
+
+  getAllPartnersByType(contentType: string) {
+    const promise = this.client.getEntries({
+      content_type: contentType,
+    });
+    return from(promise);
+  }
 }
