@@ -10,8 +10,6 @@ import { PartnerService } from 'src/app/services/partner.service';
 export class PartnersComponent implements OnInit {
   public partners: Partner[] = [];
   public merchPartners: Partner[] = [];
-  public mediaPartners: Partner[] = [];
-  public partnerOrganisations: Partner[] = [];
 
   public loading = true;
 
@@ -25,14 +23,6 @@ export class PartnersComponent implements OnInit {
 
     this.partnerService.getAllPartnersByType('eestecMerchPartner').subscribe((data) => {
       this.merchPartners = this.partnerService.convertDataToPartners(data);
-    });
-
-    this.partnerService.getAllPartnersByType('eestecMediaPartner').subscribe((data) => {
-      this.mediaPartners = this.partnerService.convertDataToPartners(data);
-    });
-
-    this.partnerService.getAllPartnersByType('eestecPartnerOrganisation').subscribe((data) => {
-      this.partnerOrganisations = this.partnerService.convertDataToPartners(data);
     });
   }
 }

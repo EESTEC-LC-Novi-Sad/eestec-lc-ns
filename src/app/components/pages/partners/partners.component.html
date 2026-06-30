@@ -26,26 +26,6 @@
         </div>
       </div>
 
-      <!-- Medijski pokrovitelji -->
-      <div *ngIf="mediaPartners.length > 0" class="partner-section">
-        <h2>Medijski pokrovitelji</h2>
-        <div class="partners">
-          <div class="partner" *ngFor="let partner of mediaPartners">
-            <partner-card [partner]="partner"></partner-card>
-          </div>
-        </div>
-      </div>
-
-      <!-- Partnerske organizacije -->
-      <div *ngIf="partnerOrganisations.length > 0" class="partner-section">
-        <h2>Partnerske organizacije</h2>
-        <div class="partners">
-          <div class="partner" *ngFor="let partner of partnerOrganisations">
-            <partner-card [partner]="partner"></partner-card>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </div>
