@@ -23,12 +23,6 @@ jobs:
     - name: Build
       run: npm run build
 
-    - name: Deploy
-      if: success()
-      run: | 
-        aws s3 sync ./dist/ s3://eestec-website --delete
-        aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
-
     - name: Setup SSH agent
       uses: webfactory/ssh-agent@v0.9.0
       with:
