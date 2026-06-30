@@ -10,6 +10,7 @@ import { BlogPostComponent } from './components/pages/blog-post/blog-post.compon
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 import { KontehComponent } from './components/pages/projects/konteh/konteh.component';
 import { SSAComponent } from './components/pages/projects/ssa/ssa.component';
+import { TechSkillsHubComponent } from './components/pages/projects/tech-skills-hub/tech-skills-hub.component';
 import { SoftSkillsAcademyComponent } from './components/pages/projects/soft-skills-academy/soft-skills-academy.component';
 import { Code9Component } from './components/pages/projects/code9/code9.component';
 import { PetDanaUOblacima } from './components/pages/projects/pet-dana-u-oblacima/pet-dana-u-oblacima.component';
@@ -18,6 +19,8 @@ import { VeConfComponent } from './components/pages/projects/ve-conf/ve-conf.com
 import { MotivacioniVikendComponent } from './components/pages/projects/motivacioni-vikend/motivacioni-vikend.component';
 import { CongressNsComponent } from './components/pages/projects/congress-ns/congress-ns.component';
 import { EestechChallengeComponent } from './components/pages/projects/eestech-challenge/eestech-challenge.component';
+import { WelcomeToFTNComponent } from './components/pages/projects/welcome-to-ftn/welcome-to-ftn.component';
+import { TrainingForTrainersHeldInNoviSad2024Component } from './components/pages/projects/16th Training for Trainers held in Novi Sad 2024/16th-training-for-trainers-held-in-novi-sad-2024.component';
 
 const baseTitle = 'EESTEC LC Novi Sad';
 
@@ -103,6 +106,21 @@ const routes: Routes = [
     path: 'eestech-challenge',
     component: EestechChallengeComponent,
     title: 'Ve:Conf - ' + baseTitle,
+  },
+  {
+    path: 'tech-skills-hub',
+    component: TechSkillsHubComponent,
+    title: 'Tech Skills Hub - ' + baseTitle,
+  },
+  {
+    path: 'welcome-to-ftn',
+    component: WelcomeToFTNComponent,
+    title: 'Welcome to FTN - ' + baseTitle,
+  },
+  {
+    path: '16th Training for Trainers held in Novi Sad 2024',
+    component: WelcomeToFTNComponent,
+    title: '16th Training for Trainers held in Novi Sad/2024 - ' + baseTitle,
   },
   {
     path: '**',

@@ -18,6 +18,9 @@ import { ProjectCardComponent } from './components/pages/landing-page/project-ca
 import { BlogPostCardComponent } from './components/pages/landing-page/blog-post-card/blog-post-card.component';
 import { BlogPostComponent } from './components/pages/blog-post/blog-post.component';
 import { FormsModule } from '@angular/forms';
+import { TechSkillsHubComponent } from './components/pages/projects/tech-skills-hub/tech-skills-hub.component';
+import { WelcomeToFTNComponent } from './components/pages/projects/welcome-to-ftn/welcome-to-ftn.component';
+import { TrainingForTrainersHeldInNoviSad2024Component } from './components/pages/projects/16th Training for Trainers held in Novi Sad 2024/16th-training-for-trainers-held-in-novi-sad-2024.component';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 import { KontehComponent } from './components/pages/projects/konteh/konteh.component';
 import { SoftSkillsAcademyComponent } from './components/pages/projects/soft-skills-academy/soft-skills-academy.component';
@@ -66,6 +69,9 @@ import { PartnerCardComponent } from './components/pages/partners/partner-card/p
     SidebarBlogCardComponent,
     BoardieCardComponent,
     PartnerCardComponent,
+    TechSkillsHubComponent,
+    WelcomeToFTNComponent,
+    TrainingForTrainersHeldInNoviSad2024Component,
   ],
   imports: [
     BrowserModule,

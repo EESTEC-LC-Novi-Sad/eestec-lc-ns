@@ -1,0 +1,13 @@
+<a routerLink="/project/{{project.id}}">
+  <div
+    class="card-container clickable p-4 is-flex is-flex-direction-column is-justify-content-center"
+  >
+    <div>
+      <img
+        src="{{ project.coverImage}}"
+        [class.invert]="theme == 'dark'"
+      />
+    </div>
+    <h2>{{ project.title }}</h2>
+  </div>
+</a>
