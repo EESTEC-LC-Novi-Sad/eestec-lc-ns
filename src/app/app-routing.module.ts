@@ -95,17 +95,17 @@ const routes: Routes = [
   {
     path: 'motivacioni-vikend',
     component: MotivacioniVikendComponent,
-    title: 'Ve:Conf - ' + baseTitle,
+    title: 'Motivacioni vikend - ' + baseTitle,
   },
   {
     path: 'congress-ns',
     component: CongressNsComponent,
-    title: 'Ve:Conf - ' + baseTitle,
+    title: 'Congress NS - ' + baseTitle,
   },
   {
     path: 'eestech-challenge',
     component: EestechChallengeComponent,
-    title: 'Ve:Conf - ' + baseTitle,
+    title: 'EESTECH Challenge - ' + baseTitle,
   },
   {
     path: 'tech-skills-hub',
@@ -130,7 +130,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+    }),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

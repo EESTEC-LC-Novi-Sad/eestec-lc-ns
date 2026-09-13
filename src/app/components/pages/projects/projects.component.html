@@ -2,14 +2,25 @@
   <div class="max-width-1200 auto-margin">
     <h1>Projekti</h1>
     <div>
-      <mat-spinner
-        class="auto-margin"
-        *ngIf="projects.length == 0"
-      ></mat-spinner>
-      <div *ngIf="projects.length != 0" class="projects">
-        <div class="project" *ngFor="let project of projects">
-          <project-card [project]="project"></project-card>
+      <mat-spinner class="auto-margin" *ngIf="projects.length == 0"></mat-spinner>
+      <div *ngIf="projects.length != 0">
+
+        <h2 class="projects-section-title">Aktuelni projekti</h2>
+
+        <div class="project-cards">
+          <div class="project-card" *ngFor="let project of activeProjects">
+            <project-card [project]="project"></project-card>
+          </div>
         </div>
+
+        <h2 class="projects-section-title">Stari projekti</h2>
+
+        <div class="project-cards">
+          <div class="project-card" *ngFor="let project of oldProjects">
+            <project-card [project]="project"></project-card>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

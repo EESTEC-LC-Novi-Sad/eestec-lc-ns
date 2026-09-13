@@ -1,13 +1,18 @@
-<a routerLink="/project/{{project.id}}">
-  <div
-    class="card-container clickable p-4 is-flex is-flex-direction-column is-justify-content-center"
-  >
-    <div>
+<a [routerLink]="getProjectRoute()">
+  <div class="card-container clickable">
+
+    <div class="fill stretch-width stretch-height">
       <img
-        src="{{ project.coverImage}}"
-        [class.invert]="theme == 'dark'"
+        [src]="project.coverImage"
+        [alt]="project.title"
       />
     </div>
-    <h2>{{ project.title }}</h2>
+
+    <div class="gradient stretch-width stretch-height"></div>
+
+    <div class="title">
+      <h1>{{ project.title }}</h1>
+    </div>
+
   </div>
 </a>

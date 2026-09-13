@@ -1,27 +1,20 @@
 <div class="welcome-page">
   <div class="transparent-header">
-    <div
-      class="stretch-width welcome is-flex is-flex-direction-column is-justify-content-center"
-    >
+    <div class="stretch-width welcome is-flex is-flex-direction-column is-justify-content-center">
       <div class="welcome-gradient"></div>
       <div class="welcome-bg"></div>
       <div
-        class="is-flex is-flex-direction-row is-align-items-center is-justify-content-space-between columns welcome-wide welcome-content"
-      >
+        class="is-flex is-flex-direction-row is-align-items-center is-justify-content-space-between columns welcome-wide welcome-content">
         <div class="column is-2"></div>
-        <div
-          class="column is-flex is-align-items-start is-flex-direction-column"
-        >
+        <div class="column is-flex is-align-items-start is-flex-direction-column">
           <h1>Travel.</h1>
           <h1>Connect.</h1>
           <h1>Improve.</h1>
         </div>
         <div class="column"></div>
         <div class="column is-flex is-align-items-end is-flex-direction-column">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfU_16YvZZatCP51JW6utfPw4XX8Oq0VAx9WL6B6N0Ct0zWHg/viewform"
-            target="_blank"
-          >
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU_16YvZZatCP51JW6utfPw4XX8Oq0VAx9WL6B6N0Ct0zWHg/viewform"
+            target="_blank">
             <button mat-flat-button color="primary" class="button-welcome">
               Postani naš član!
             </button>
@@ -31,9 +24,7 @@
         <div class="column is-2"></div>
       </div>
 
-      <div
-        class="welcome-mobile is-flex is-flex-direction-column welcome-content"
-      >
+      <div class="welcome-mobile is-flex is-flex-direction-column welcome-content">
         <div class="is-flex is-align-items-center is-flex-direction-column">
           <h1>Travel.</h1>
           <h1>Connect.</h1>
@@ -41,10 +32,8 @@
         </div>
 
         <div class="is-flex is-align-items-center is-flex-direction-column">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfU_16YvZZatCP51JW6utfPw4XX8Oq0VAx9WL6B6N0Ct0zWHg/viewform"
-            target="_blank"
-          >
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU_16YvZZatCP51JW6utfPw4XX8Oq0VAx9WL6B6N0Ct0zWHg/viewform"
+            target="_blank">
             <button mat-flat-button color="primary" class="button-welcome">
               Postani naš član!
             </button>
@@ -94,34 +83,33 @@
 
   <div class="columns auto-margin max-width-1200 projets-section">
     <div class="column">
-      <project-card title="KONTEH" image="konteh.jpg"></project-card>
-    </div>
-
-    <div class="column">
-      <a [routerLink]="['/5-dana-u-oblacima']">
-        <project-card
-          title="5 Dana u Oblacima"
-          image="5danauoblacima.jpg"
-        ></project-card>
+      <a [routerLink]="['/konteh']">
+        <landing-project-card title="KONTEH" [image]="getProjectImage('KONTEH')">
+        </landing-project-card>
       </a>
     </div>
 
     <div class="column">
-      <a [routerLink]="['/ssa']">
-        <project-card title="SSA" image="ssa.jpg"></project-card>
+      <a [routerLink]="['/5-dana-u-oblacima']">
+        <landing-project-card title="5 Dana u Oblacima"
+          [image]="getProjectImage('5 dana u oblacima')"></landing-project-card>
+      </a>
+    </div>
+
+    <div class="column">
+      <a [routerLink]="['/soft-skills-academy']">
+        <landing-project-card title="SSA" [image]="getProjectImage('Soft Skills Academy')"></landing-project-card>
       </a>
     </div>
 
     <div class="column">
       <a [routerLink]="['/ve-conf']">
-        <project-card title="Ve:Conf" image="veconf.jpg"></project-card>
+        <landing-project-card title="Ve:Conf" image="assets/veconf.jpg"></landing-project-card>
       </a>
     </div>
   </div>
 
-  <div
-    class="stretch-width is-flex is-flex-direction-column justify-content-center"
-  >
+  <div class="stretch-width is-flex is-flex-direction-column justify-content-center">
     <div class="auto-margin">
       <a [routerLink]="['/projects']">
         <button mat-flat-button color="primary" class="view-more-button">
@@ -131,18 +119,13 @@
     </div>
   </div>
 
-  <div
-    class="is-flex video-section is-justify-content-center is-flex-direction-column video-wide"
-  >
+  <div class="is-flex video-section is-justify-content-center is-flex-direction-column video-wide">
     <div class="video-gradient"></div>
     <div class="video-bg"></div>
-    <div
-      class="columns stretch-height stretch-width is-vcentered video-content"
-    >
+    <div class="columns stretch-height stretch-width is-vcentered video-content">
       <div class="column is-1"></div>
       <div
-        class="column stretch-height is-flex is-flex-direction-column is-align-items-center is-justify-content-center px-5"
-      >
+        class="column stretch-height is-flex is-flex-direction-column is-align-items-center is-justify-content-center px-5">
         <h1 class="title-about">Ukratko o nama</h1>
         <p>
           Udruženje studenata elektrotehnike Evrope (Electrical Engineering
@@ -157,30 +140,21 @@
         </p>
       </div>
       <div
-        class="column stretch-height is-flex is-flex-direction-column is-align-items-start is-justify-content-center"
-      >
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/vVQKKUD5_VE"
-          title="YouTube video player"
+        class="column stretch-height is-flex is-flex-direction-column is-align-items-start is-justify-content-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vVQKKUD5_VE" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+          allowfullscreen></iframe>
       </div>
       <div class="column is-1"></div>
     </div>
   </div>
 
-  <div
-    class="is-flex video-section is-justify-content-center is-flex-direction-column video-mobile"
-  >
+  <div class="is-flex video-section is-justify-content-center is-flex-direction-column video-mobile">
     <div class="video-gradient"></div>
     <div class="video-bg"></div>
     <div
-      class="stretch-height is-flex is-flex-direction-column is-align-items-center is-justify-content-center px-5 video-content"
-    >
+      class="stretch-height is-flex is-flex-direction-column is-align-items-center is-justify-content-center px-5 video-content">
       <h1 class="title-about">Ukratko o nama</h1>
       <p>
         Udruženje studenata elektrotehnike Evrope (Electrical Engineering
@@ -194,23 +168,16 @@
       </p>
     </div>
     <div
-      class="stretch-height is-flex is-flex-direction-column is-align-items-start is-justify-content-center mt-5 video-content"
-    >
-      <iframe
-        width="80%"
-        height="300px"
-        src="https://www.youtube.com/embed/vVQKKUD5_VE"
-        title="YouTube video player"
+      class="stretch-height is-flex is-flex-direction-column is-align-items-start is-justify-content-center mt-5 video-content">
+      <iframe width="80%" height="300px" src="https://www.youtube.com/embed/vVQKKUD5_VE" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+        allowfullscreen></iframe>
     </div>
   </div>
 
   <div
-    class="is-flex is-flex-direction-row is-justify-content-space-between is-align-items-center stretch-wisth blog-title-section blog-wide"
-  >
+    class="is-flex is-flex-direction-row is-justify-content-space-between is-align-items-center stretch-wisth blog-title-section blog-wide">
     <h1 class="blog-title">Blog</h1>
     <a href="/blog">
       <button mat-flat-button color="primary" class="view-more-button-blog">
@@ -220,8 +187,7 @@
   </div>
 
   <div
-    class="is-flex is-flex-direction-row is-justify-content-space-around is-align-items-center stretch-wisth blog-title-section blog-mobile"
-  >
+    class="is-flex is-flex-direction-row is-justify-content-space-around is-align-items-center stretch-wisth blog-title-section blog-mobile">
     <h1 class="blog-title">Blog</h1>
     <a href="/blog">
       <button mat-flat-button color="primary" class="view-more-button-blog">

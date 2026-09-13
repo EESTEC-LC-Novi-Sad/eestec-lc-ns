@@ -116,6 +116,29 @@ body {
   margin-bottom: 80px;
 }
 
+
+.basic-page li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.basic-page li::before {
+  content: "•";
+  position: absolute;
+  left: 8px;
+  top: 0;
+
+  color: $red-on-bg;
+  font-size: 20px;
+  line-height: 0.8;
+}
+
 .basic-page .project-card h1 {
   font-size: 30px;
   line-height: 35px;

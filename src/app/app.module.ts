@@ -15,6 +15,7 @@ import { PartnersComponent } from './components/pages/partners/partners.componen
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { ProjectCardComponent } from './components/pages/projects/project-card/project-card.component';
+import { LandingProjectCardComponent } from './components/pages/landing-page/project-card/project-card.component';
 import { BlogPostCardComponent } from './components/pages/landing-page/blog-post-card/blog-post-card.component';
 import { BlogPostComponent } from './components/pages/blog-post/blog-post.component';
 import { FormsModule } from '@angular/forms';
@@ -52,6 +53,7 @@ import { PartnerCardComponent } from './components/pages/partners/partner-card/p
     ProjectsComponent,
     ContactComponent,
     ProjectCardComponent,
+    LandingProjectCardComponent,
     BlogPostCardComponent,
     BlogPostComponent,
     NotFoundComponent,

@@ -1,6 +1,6 @@
-<div class="card-container clickable" (click)="navigateProjects()">
+<div class="card-container clickable">
   <div class="fill stretch-width stretch-height">
-    <img src="{{ imageSrc }}" />
+    <img [src]="image" [alt]="title" />
   </div>
 
   <div class="gradient stretch-width stretch-height"></div>

@@ -1,9 +1,12 @@
 .project-card {
   width: 400px;
+  height: 450px;
   padding: 10px;
   display: inline-block;
   margin-bottom: 50px;
-  height: 450px;
+
+  box-sizing: border-box;
+  vertical-align: top;
 
   @media (max-width: 400px) {
     width: 300px;
@@ -12,4 +15,15 @@
 
 .project-cards {
   text-align: center;
+}
+
+.projects-section-title {
+  font-family: Oswald, sans-serif !important;
+  color: var(--red-on-bg);
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+
+  margin-top: 50px;
+  margin-bottom: 35px;
 }

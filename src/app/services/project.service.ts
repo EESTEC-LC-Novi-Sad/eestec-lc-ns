@@ -28,7 +28,9 @@ export class ProjectService {
       let project: Project = new Project();
       project.title = item.fields.title;
       project.description = item.fields.description;
-      project.coverImage = item.fields.coverImg;
+      project.coverImage = item.fields.coverImg?.fields?.file?.url
+  ? 'https:' + item.fields.coverImg.fields.file.url
+  : '';
       project.projectLogo = item.fields.projectLogo;
       project.activeProject = item.fields.activeProject;
       project.id = item.sys.id;

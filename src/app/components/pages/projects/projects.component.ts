@@ -10,11 +10,22 @@ import { ProjectService } from 'src/app/services/project.service';
 export class ProjectsComponent implements OnInit {
   public projects: Project[] = [];
 
+  public activeProjects: Project[] = [];
+  public oldProjects: Project[]=[];
+
   constructor(private projectService: ProjectService) {}
 
   ngOnInit(): void {
     this.projectService.getAllProjects().subscribe((data) => {
       this.projects = this.projectService.convertDataToProjects(data);
+
+      this.activeProjects = this.projects.filter(
+        project=>project.activeProject==true
+      );
+
+      this.oldProjects = this.projects.filter(
+        project => project.activeProject !== true
+      );
     });
   }
 }
